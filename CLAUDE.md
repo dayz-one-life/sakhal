@@ -11,6 +11,9 @@ set:
 
 - **Economy / loot:** `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfgrandompresets.xml`,
   `cfglimitsdefinition*.xml`, and `db/` (`types.xml`, `events.xml`, `globals.xml`, `economy.xml`).
+  `db/globals.xml` also holds server timers (login/hop/relog penalties, idle mode).
+- **Broadcast messages:** `db/messages.xml` — scheduled/onconnect server messages and the restart
+  countdown. Auto-loaded from `db/` (no registration in `cfgeconomycore.xml` needed).
 - **Map groups & spawns:** `mapgroup*.xml`, `mapcluster*.xml`, `cfgplayerspawnpoints.xml`,
   `cfgeventspawns.xml`, `cfgeventgroups.xml`.
 - **Environment / AI territories:** `cfgenvironment.xml`, `cfgweather.xml`, and `env/` (per-animal
@@ -18,10 +21,14 @@ set:
   dynamic spawn range (`dmin`/`dmax`); a range set to `0`/`0` means that spawn mode is unused for
   that zone. Tune infected/animal density via these attributes.
 - **Gameplay & entry points:** `cfggameplay.json`, `config.cpp`, `init.c`, plus effect/area and
-  underground trigger config.
+  underground trigger config. Hardcore ruleset: permadeath (`disableRespawnInUnconsciousness`) and a
+  constant year-round cold climate (`environmentMinTemps`/`environmentMaxTemps` flat at −10/−4 °C).
 - **Spawn loadout:** `custom/loadout.json`, referenced from `cfggameplay.json` via
   `PlayerData.spawnGearPresetFiles`. Defines the gear new characters spawn with. Paths in
   `spawnGearPresetFiles` are relative to the mission root (`./custom/...`).
+- **Base building:** `cfggameplay.json` `BaseBuildingData` runs **free-form placement** — all
+  `HologramData`/`ConstructionData` `disable*Check` flags are `true` (build anywhere, including cold
+  zones). `disallowedTypesInUnderground` still blocks specific kits underground.
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
