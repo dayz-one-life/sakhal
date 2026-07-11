@@ -25,6 +25,9 @@ set:
 - **Spawn loadout:** `custom/loadout.json`, referenced from `cfggameplay.json` via
   `PlayerData.spawnGearPresetFiles`. Defines the gear new characters spawn with. Paths in
   `spawnGearPresetFiles` are relative to the mission root (`./custom/...`).
+- **Base building:** `cfggameplay.json` `BaseBuildingData` runs **free-form placement** — all
+  `HologramData`/`ConstructionData` `disable*Check` flags are `true` (build anywhere, including cold
+  zones). `disallowedTypesInUnderground` still blocks specific kits underground.
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 

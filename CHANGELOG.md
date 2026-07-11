@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Server broadcast messages: `db/messages.xml` (ported from the chernarus server, adapted for Sakhal) — a new-player onboarding rotation (one-life ruleset + Discord invite) plus the restart countdown. Auto-loaded from `db/`.
 
 ### Changed
+- Base building: enabled **free-form placement** in `cfggameplay.json` — disabled all 14 `BaseBuildingData` placement/collision checks (10 `HologramData` + 3 `ConstructionData` + Sakhal's `disableColdAreaPlacementCheck`), so structures can be placed anywhere, including cold zones. Matches the chernarus server's build-anywhere ruleset. `disallowedTypesInUnderground` is unchanged.
 - Timers / anti-hop: adopted the chernarus hardcore timer settings in `db/globals.xml` — removed server-hop and relog penalties (`TimeHopping`/`TimePenalty` = 0), shortened `TimeLogin` (15→5), and effectively disabled idle mode (`IdleModeCountdown` 60→3600, `IdleModeStartup` 1→0). The other 25 globals are unchanged.
 ### Deprecated
 ### Removed
