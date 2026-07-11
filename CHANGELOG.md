@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Automated deployment: `.github/workflows/deploy.yml` uploads the mission config to the DayZ (Nitrado) server over FTP whenever a GitHub release is published, syncing only changed files. Requires the `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`, and `FTP_DIRECTORY` repository secrets. Until the `FTP_SERVER` secret is set, the deploy job skips gracefully (ends green with a notice) instead of failing, so releases stay clean before the Nitrado server is provisioned.
+
 ### Changed
 ### Deprecated
 ### Removed
