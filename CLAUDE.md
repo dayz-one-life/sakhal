@@ -1,7 +1,24 @@
 # CLAUDE.md
 
-This project was created from the Claude Code workflow template. The workflow below is
-enforced by committed hooks in `.claude/` and streamlined by repo-level skills.
+This repository holds the server configuration for a **DayZ Sakhal** server. It was created
+from the Claude Code workflow template; the workflow below is enforced by committed hooks in
+`.claude/` and streamlined by repo-level skills.
+
+## Server configuration
+
+The repository root contains the DayZ mission config, based on the official `dayzOffline.sakhal`
+set:
+
+- **Economy / loot:** `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfgrandompresets.xml`,
+  `cfglimitsdefinition*.xml`, and `db/` (`types.xml`, `events.xml`, `globals.xml`, `economy.xml`).
+- **Map groups & spawns:** `mapgroup*.xml`, `mapcluster*.xml`, `cfgplayerspawnpoints.xml`,
+  `cfgeventspawns.xml`, `cfgeventgroups.xml`.
+- **Environment / AI territories:** `cfgenvironment.xml`, `cfgweather.xml`, and `env/` (per-animal
+  and zombie territory files).
+- **Gameplay & entry points:** `cfggameplay.json`, `config.cpp`, `init.c`, plus effect/area and
+  underground trigger config.
+
+Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
 ## On session start
 
