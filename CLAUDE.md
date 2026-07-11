@@ -20,6 +20,25 @@ set:
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
+## Deployment
+
+`.github/workflows/deploy.yml` deploys the mission config to the DayZ (Nitrado) server over FTP.
+It triggers on **GitHub release published** (i.e. every release cut by the workflow below) and
+uploads only changed files via [`SamKirkland/FTP-Deploy-Action`](https://github.com/SamKirkland/FTP-Deploy-Action),
+tracking sync state in `.ftp-deploy-sync-state.json` on the server. Repo-management files
+(`.git`, `.github`, `.claude`, `*.md`, etc.) are excluded — only the mission config is uploaded.
+
+**Required repository secrets** (Settings → Secrets and variables → Actions). Until the `FTP_SERVER`
+secret is set, the deploy job **skips gracefully** — it ends green with a notice rather than failing,
+so releases cut before the server is provisioned stay clean:
+
+| Secret | Purpose |
+| --- | --- |
+| `FTP_SERVER` | Nitrado FTP host |
+| `FTP_USERNAME` | FTP account username |
+| `FTP_PASSWORD` | FTP account password |
+| `FTP_DIRECTORY` | Server-side target dir for the mission files |
+
 ## On session start
 
 A SessionStart hook injects a role-aware orientation. **Present that orientation to the
