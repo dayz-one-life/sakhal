@@ -20,6 +20,18 @@ set:
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
+### Loot economy conventions
+
+When rebalancing `db/types.xml` spawn counts (`nominal`/`min`) globally, two classes of item are
+intentionally **exempt** and keep their upstream values:
+
+- Items flagged `deloot="1"` in `<flags>` — dynamic event loot, tuned by event spawns rather than
+  the ambient economy.
+- Items with a `<usage name="Underground"/>` flag — Sakhal underground-facility loot.
+
+The current baseline reflects a global ~50% reduction of `nominal`/`min` (round half up, never below
+zero) applied to every non-exempt type.
+
 ## Deployment
 
 `.github/workflows/deploy.yml` deploys the mission config to the DayZ (Nitrado) server over FTP.
