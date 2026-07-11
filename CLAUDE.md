@@ -14,7 +14,9 @@ set:
 - **Map groups & spawns:** `mapgroup*.xml`, `mapcluster*.xml`, `cfgplayerspawnpoints.xml`,
   `cfgeventspawns.xml`, `cfgeventgroups.xml`.
 - **Environment / AI territories:** `cfgenvironment.xml`, `cfgweather.xml`, and `env/` (per-animal
-  and zombie territory files).
+  and zombie territory files). Each `<zone>` carries a static spawn range (`smin`/`smax`) and a
+  dynamic spawn range (`dmin`/`dmax`); a range set to `0`/`0` means that spawn mode is unused for
+  that zone. Tune infected/animal density via these attributes.
 - **Gameplay & entry points:** `cfggameplay.json`, `config.cpp`, `init.c`, plus effect/area and
   underground trigger config.
 - **Spawn loadout:** `custom/loadout.json`, referenced from `cfggameplay.json` via
