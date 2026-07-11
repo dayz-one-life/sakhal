@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Custom spawn loadout: `custom/loadout.json` (ported from the chernarus server) referenced via `spawnGearPresetFiles` in `cfggameplay.json`. New characters spawn with a t-shirt, canvas pants, athletic shoes, a bandage, and a steak knife. Note: this is a light/temperate loadout with no cold-weather layers — players may chill quickly on Sakhal until it is warmed up for the map.
+
 ### Changed
 ### Deprecated
 ### Removed

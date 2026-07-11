@@ -17,6 +17,9 @@ set:
   and zombie territory files).
 - **Gameplay & entry points:** `cfggameplay.json`, `config.cpp`, `init.c`, plus effect/area and
   underground trigger config.
+- **Spawn loadout:** `custom/loadout.json`, referenced from `cfggameplay.json` via
+  `PlayerData.spawnGearPresetFiles`. Defines the gear new characters spawn with. Paths in
+  `spawnGearPresetFiles` are relative to the mission root (`./custom/...`).
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
