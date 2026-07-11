@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## [1.3.0] - 2026-07-10
+
+### Changed
+- Loot economy: halved the `nominal` and `min` values (round half up, floored at 0) for all `db/types.xml` entries — 1,902 of 1,955 — to roughly halve overall loot availability. Excludes the 35 `deloot="1"` (dynamic event loot) and 18 `Underground` items, which keep their original values.
+
 ## [1.2.0] - 2026-07-10
 
 ### Added
