@@ -8,11 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
-- Climate: warmed the constant year-round cold in `cfggameplay.json` by 2 °C across the board — `environmentMinTemps` −10 → −8 °C and `environmentMaxTemps` −4 → −2 °C for every month. Still a flat, seasonless cold, just 2° less punishing.
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [1.5.1] - 2026-07-11
+
+### Changed
+- Climate: warmed the constant year-round cold in `cfggameplay.json` by 2 °C across the board — `environmentMinTemps` −10 → −8 °C and `environmentMaxTemps` −4 → −2 °C for every month. Still a flat, seasonless cold, just 2° less punishing.
 
 ## [1.5.0] - 2026-07-10
 
