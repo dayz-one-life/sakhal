@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- Infected density: increased the dynamic spawn counts (`dmin`/`dmax`) in `env/zombie_territories.xml` by 2 for every zone where the value was greater than 0 (781 attributes across 417 zones), raising the number of roaming infected. Zones with `dmin`/`dmax` of 0 (static-only spawns) and all `smin`/`smax` values are unchanged.
 ### Deprecated
 ### Removed
 ### Fixed
