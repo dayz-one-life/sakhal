@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Default DayZ Sakhal server configuration: baseline mission files from the official `dayzOffline.sakhal` set — economy core, spawnable/random presets, map group definitions, animal territory files, gameplay/weather/environment config, `init.c`, and `config.cpp`.
+- Workflow initialization: stamped `dayz-one-life/sakhal` as the canonical repo and enabled solo maintainer mode in `.claude/workflow.json`.
+
 ### Changed
 ### Deprecated
 ### Removed
