@@ -11,6 +11,9 @@ set:
 
 - **Economy / loot:** `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfgrandompresets.xml`,
   `cfglimitsdefinition*.xml`, and `db/` (`types.xml`, `events.xml`, `globals.xml`, `economy.xml`).
+  `db/globals.xml` also holds server timers (login/hop/relog penalties, idle mode).
+- **Broadcast messages:** `db/messages.xml` — scheduled/onconnect server messages and the restart
+  countdown. Auto-loaded from `db/` (no registration in `cfgeconomycore.xml` needed).
 - **Map groups & spawns:** `mapgroup*.xml`, `mapcluster*.xml`, `cfgplayerspawnpoints.xml`,
   `cfgeventspawns.xml`, `cfgeventgroups.xml`.
 - **Environment / AI territories:** `cfgenvironment.xml`, `cfgweather.xml`, and `env/` (per-animal

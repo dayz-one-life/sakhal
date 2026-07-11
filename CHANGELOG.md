@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Server broadcast messages: `db/messages.xml` (ported from the chernarus server, adapted for Sakhal) — a new-player onboarding rotation (one-life ruleset + Discord invite) plus the restart countdown. Auto-loaded from `db/`.
+
 ### Changed
+- Timers / anti-hop: adopted the chernarus hardcore timer settings in `db/globals.xml` — removed server-hop and relog penalties (`TimeHopping`/`TimePenalty` = 0), shortened `TimeLogin` (15→5), and effectively disabled idle mode (`IdleModeCountdown` 60→3600, `IdleModeStartup` 1→0). The other 25 globals are unchanged.
 ### Deprecated
 ### Removed
 ### Fixed
