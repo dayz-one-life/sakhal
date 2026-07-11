@@ -22,7 +22,7 @@ set:
   that zone. Tune infected/animal density via these attributes.
 - **Gameplay & entry points:** `cfggameplay.json`, `config.cpp`, `init.c`, plus effect/area and
   underground trigger config. Hardcore ruleset: permadeath (`disableRespawnInUnconsciousness`) and a
-  constant year-round cold climate (`environmentMinTemps`/`environmentMaxTemps` flat at −10/−4 °C).
+  constant year-round cold climate (`environmentMinTemps`/`environmentMaxTemps` flat at −8/−2 °C).
 - **Spawn loadout:** `custom/loadout.json`, referenced from `cfggameplay.json` via
   `PlayerData.spawnGearPresetFiles`. Defines the gear new characters spawn with. Paths in
   `spawnGearPresetFiles` are relative to the mission root (`./custom/...`).
