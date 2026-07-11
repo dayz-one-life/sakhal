@@ -58,7 +58,7 @@
 	{
 		"lightingConfig": 2,
 		"objectSpawnersArr": [],
-		"environmentMinTemps": [-8, -8, -8, -8, -8, -8, -8, -8, -8, -8, -8, -8],
+		"environmentMinTemps": [-10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10, -10],
 		"environmentMaxTemps": [-4, -4, -4, -4, -4, -4, -4, -4, -4, -4, -4, -4],
 		"wetnessWeightModifiers": [1.0, 1.0, 1.33, 1.66, 2.0],
 		"playerRestrictedAreaFiles": ["pra/warheadstorage.json"]
