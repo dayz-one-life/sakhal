@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- Personal light: disabled the ambient player light in `cfggameplay.json` (`PlayerData.disablePersonalLight` `false` → `true`), so players no longer emit the faint glow that softly lit their surroundings at night. Reinforces the hardcore ruleset — nights are genuinely dark and require a real light source.
 ### Deprecated
 ### Removed
 ### Fixed

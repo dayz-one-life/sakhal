@@ -12,7 +12,7 @@
 		"spawnGearPresetFiles": [
 			"./custom/loadout.json"
 		],
-		"disablePersonalLight": false,
+		"disablePersonalLight": true,
 		"StaminaData":
 		{
 			"sprintStaminaModifierErc": 1.0,
