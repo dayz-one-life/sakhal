@@ -8,11 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
-- Climate: raised the daytime ceiling of the constant year-round cold in `cfggameplay.json` — `environmentMaxTemps` −2 → 0 °C for every month. `environmentMinTemps` stays flat at −8 °C, so the cold is 2° less punishing at its warmest while nights are unchanged.
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [1.5.3] - 2026-07-14
+
+### Changed
+- Climate: raised the daytime ceiling of the constant year-round cold in `cfggameplay.json` — `environmentMaxTemps` −2 → 0 °C for every month. `environmentMinTemps` stays flat at −8 °C, so the cold is 2° less punishing at its warmest while nights are unchanged.
 
 ## [1.5.2] - 2026-07-13
 
