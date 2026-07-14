@@ -21,8 +21,9 @@ set:
   dynamic spawn range (`dmin`/`dmax`); a range set to `0`/`0` means that spawn mode is unused for
   that zone. Tune infected/animal density via these attributes.
 - **Gameplay & entry points:** `cfggameplay.json`, `config.cpp`, `init.c`, plus effect/area and
-  underground trigger config. Hardcore ruleset: permadeath (`disableRespawnInUnconsciousness`) and a
-  constant year-round cold climate (`environmentMinTemps`/`environmentMaxTemps` flat at −8/−2 °C).
+  underground trigger config. Hardcore ruleset: permadeath (`disableRespawnInUnconsciousness`), a
+  constant year-round cold climate (`environmentMinTemps`/`environmentMaxTemps` flat at −8/−2 °C), and
+  no ambient personal light (`PlayerData.disablePersonalLight`) so nights stay genuinely dark.
 - **Spawn loadout:** `custom/loadout.json`, referenced from `cfggameplay.json` via
   `PlayerData.spawnGearPresetFiles`. Defines the gear new characters spawn with. Paths in
   `spawnGearPresetFiles` are relative to the mission root (`./custom/...`).
