@@ -13,6 +13,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## [2.0.0] - 2026-07-15
+
+### Added
+- Merge tooling: `docs/tools/road-to-badlands/` transform scripts (`nerf_loot.py`, `buff_zeds.py`) plus the merge spec and plan under `docs/superpowers/`. Both scripts preserve source line endings byte-for-byte and abort if the matched element count differs from the file's element count. Documentation/tooling only — excluded from the FTP deploy.
+
+### Changed
+- Upstream base: adopted Bohemia's **Road to Badlands** `dayzOffline.sakhal` as the new mission-config base, then re-applied our customizations on top. All shared config files were taken from upstream wholesale; only version skew changed except where noted below.
+- Loot economy: re-derived the loot nerf against the new base — halved `nominal` and `min` (round half up, floored at 1) for all `db/types.xml` types except the 45 `deloot="1"` (dynamic event loot) and 18 `<usage name="Underground"/>` items, which keep their upstream values (1,922 of 1,985 types nerfed).
+- Infected density: re-applied the zed buff against the new base — increased dynamic spawn counts (`dmin`/`dmax`) by **1** for every zone with `dmax > 0` (404 of 417 zones); the 13 `dmax = 0` (static-only) zones and all `smin`/`smax` values are unchanged. CRLF line endings preserved. (Previous baseline was +2 against the old upstream; this re-derives +1 on the RtB base.)
+
+### Removed
+- Ignore list: dropped our 5 custom flare entries from `cfgignorelist.xml`, adopting the vanilla Road to Badlands version.
+
+### Preserved (kept over upstream)
+- `cfggameplay.json` and `db/globals.xml` kept as-is (verified: Road to Badlands added no new keys to either). `db/messages.xml` and `custom/loadout.json` are ours-only (absent upstream) and untouched.
+
 ## [1.5.4] - 2026-07-14
 
 ### Removed
