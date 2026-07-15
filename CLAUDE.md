@@ -34,6 +34,13 @@ set:
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
+### Repository tooling (`docs/`)
+
+`docs/` holds non-deployed repository material: `docs/superpowers/` (merge specs/plans) and
+`docs/tools/` (one-off transform scripts, e.g. `docs/tools/road-to-badlands/` — the deterministic
+loot-nerf and zed-buff scripts used when adopting a new upstream base). These are excluded from the
+FTP deploy (only mission config is uploaded) and are kept for reproducibility and audit.
+
 ### Loot economy conventions
 
 When rebalancing `db/types.xml` spawn counts (`nominal`/`min`) globally, two classes of item are
