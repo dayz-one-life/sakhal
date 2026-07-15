@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## [2.0.1] - 2026-07-15
+
+### Changed
+- Loot economy: raised `LootDamageMin` in `db/globals.xml` from `0.0` to `0.2`, so spawned loot always carries at least 20% wear (`LootDamageMax` unchanged at `0.82`).
+
 ## [2.0.0] - 2026-07-15
 
 ### Added

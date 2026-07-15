@@ -11,7 +11,8 @@ set:
 
 - **Economy / loot:** `cfgeconomycore.xml`, `cfgspawnabletypes.xml`, `cfgrandompresets.xml`,
   `cfglimitsdefinition*.xml`, and `db/` (`types.xml`, `events.xml`, `globals.xml`, `economy.xml`).
-  `db/globals.xml` also holds server timers (login/hop/relog penalties, idle mode).
+  `db/globals.xml` also holds server timers (login/hop/relog penalties, idle mode) and the
+  spawned-loot wear bounds (`LootDamageMin`/`LootDamageMax`).
 - **Broadcast messages:** `db/messages.xml` — onconnect onboarding messages (rules + community link)
   that repeat while players are online. Auto-loaded from `db/` (no registration in `cfgeconomycore.xml`
   needed).
