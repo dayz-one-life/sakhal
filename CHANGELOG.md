@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Deprecated
 ### Removed
+- Broadcast messages: removed the scheduled server-restart countdown message from `db/messages.xml` (the `<shutdown>` entry, "#name will restart in #tmin minutes."). Only the two onconnect onboarding messages remain.
 ### Fixed
 ### Security
 
