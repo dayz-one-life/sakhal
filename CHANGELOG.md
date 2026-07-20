@@ -10,10 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 ### Deprecated
 ### Removed
-- Custom spawn loadout: deleted `custom/loadout.json` and dropped the `PlayerData.spawnGearPresetFiles` key from `cfggameplay.json`, restoring vanilla Sakhal's structure (upstream omits the key rather than setting it empty). New characters now get DayZ's built-in default spawn gear (random t-shirt, canvas pants, athletic shoes, plus a bandage, chemlight, and fruit) instead of our ported chernarus preset. Note this does not change cold survivability — the built-in default is also a temperate loadout with no cold-weather layers.
-
 ### Fixed
 ### Security
+
+## [2.1.0] - 2026-07-19
+
+### Removed
+- Custom spawn loadout: deleted `custom/loadout.json` and dropped the `PlayerData.spawnGearPresetFiles` key from `cfggameplay.json`, restoring vanilla Sakhal's structure (upstream omits the key rather than setting it empty). New characters now get DayZ's built-in default spawn gear (random t-shirt, canvas pants, athletic shoes, plus a bandage, chemlight, and fruit) instead of our ported chernarus preset. Note this does not change cold survivability — the built-in default is also a temperate loadout with no cold-weather layers.
 
 ## [2.0.1] - 2026-07-15
 
