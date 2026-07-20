@@ -13,6 +13,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## [2.1.1] - 2026-07-20
+
+### Changed
+- Broadcast messages: synced `db/messages.xml` with the Chernarus server's version so both servers broadcast identical onboarding copy. The second message now points players at the website (`dayzonelife.com`, "earn and spend unban tokens, climb the leaderboard") instead of the Discord invite (`discord.gg/gdCdgmjhRe`). Message count, `onconnect` delay, and `repeat` interval are unchanged; the map name in the first message stays "Sakhal". Line endings normalized to CRLF to match the rest of the mission config.
+
 ## [2.1.0] - 2026-07-19
 
 ### Removed
