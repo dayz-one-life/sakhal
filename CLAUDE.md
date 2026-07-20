@@ -26,9 +26,10 @@ set:
   underground trigger config. Hardcore ruleset: permadeath (`disableRespawnInUnconsciousness`), a
   constant year-round cold climate (`environmentMinTemps`/`environmentMaxTemps` flat at −8/0 °C), and
   no ambient personal light (`PlayerData.disablePersonalLight`) so nights stay genuinely dark.
-- **Spawn loadout:** none — `PlayerData.spawnGearPresetFiles` in `cfggameplay.json` is an empty
-  array, so new characters get DayZ's built-in default spawn gear. To define a custom loadout,
-  add a preset file and reference it here; paths are relative to the mission root (`./custom/...`).
+- **Spawn loadout:** none — `cfggameplay.json` omits `PlayerData.spawnGearPresetFiles` entirely
+  (matching vanilla Sakhal), so new characters get DayZ's built-in default spawn gear. To define a
+  custom loadout, add the key back pointing at a preset file; paths are relative to the mission
+  root (`./custom/...`).
 - **Base building:** `cfggameplay.json` `BaseBuildingData` runs **free-form placement** — all
   `HologramData`/`ConstructionData` `disable*Check` flags are `true` (build anywhere, including cold
   zones). `disallowedTypesInUnderground` still blocks specific kits underground.
