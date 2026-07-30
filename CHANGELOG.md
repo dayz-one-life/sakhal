@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
+- Loot economy: reset `db/types.xml` and `cfgrandompresets.xml` to plain vanilla Sakhal (the `road-to-badlands-mission-files` upstream base), reverting the 3.0.0 global loot nerf. All 1,985 types now match upstream `nominal`/`min` (1,024 values restored), and all 78 preset containers match upstream `chance` values (75 restored).
+- Server timers: `db/globals.xml` now adopts the shared parent-directory copy — `FlagRefreshMaxDuration` drops from `3456000` (40 days) to `604800` (7 days), and `IdleModeCountdown` rises from `3600` (1 hour) to `21600` (6 hours). All other globals, including the custom `LootDamageMin` of `0.25`, are unchanged; `db/messages.xml` already matched its shared copy.
 ### Deprecated
 ### Removed
 ### Fixed
