@@ -27,7 +27,7 @@
         <value name="Tier3"/>
     </type>
     <type name="AK101">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
         <min>1</min>
@@ -118,7 +118,7 @@
         <value name="Tier3"/>
     </type>
     <type name="AKM">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>10800</restock>
         <min>1</min>
@@ -508,10 +508,10 @@
         <value name="Tier3"/>
     </type>
     <type name="AmmoBox">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -675,10 +675,10 @@
         <value name="Tier3"/>
     </type>
     <type name="AmmoBox_556x45Tracer_20Rnd">
-        <nominal>6</nominal>
+        <nominal>3</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -687,10 +687,10 @@
         <usage name="Special"/>
     </type>
     <type name="AmmoBox_556x45_20Rnd">
-        <nominal>6</nominal>
+        <nominal>3</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -699,10 +699,10 @@
         <usage name="Special"/>
     </type>
     <type name="AmmoBox_762x39Tracer_20Rnd">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -711,10 +711,10 @@
         <usage name="Underground"/>
     </type>
     <type name="AmmoBox_762x39_20Rnd">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -723,10 +723,10 @@
         <usage name="Underground"/>
     </type>
     <type name="AmmoBox_762x54Tracer_20Rnd">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -735,10 +735,10 @@
         <usage name="Underground"/>
     </type>
     <type name="AmmoBox_762x54_20Rnd">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -2219,7 +2219,7 @@
         <value name="Tier2"/>
     </type>
     <type name="Attack2Bag_Black">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -2592,7 +2592,7 @@
         <usage name="Hunting"/>
     </type>
     <type name="BalaclavaMask_Pig">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -10319,10 +10319,10 @@
         <value name="Tier2"/>
     </type>
     <type name="HoloOptic">
-        <nominal>6</nominal>
+        <nominal>3</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>4</min>
+        <min>2</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -12440,7 +12440,7 @@
         <flags count_in_cargo="0" count_in_hoarder="0" count_in_map="1" count_in_player="0" crafted="1" deloot="0"/>
     </type>
     <type name="M14">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>14400</lifetime>
         <restock>7200</restock>
         <min>1</min>
@@ -12525,7 +12525,7 @@
         <usage name="Military"/>
     </type>
     <type name="M4A1">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>7200</restock>
         <min>1</min>
@@ -12973,10 +12973,10 @@
         <value name="Tier2"/>
     </type>
     <type name="Mag_AK101_30Rnd">
-        <nominal>6</nominal>
+        <nominal>3</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>5</quantmin>
         <quantmax>35</quantmax>
         <cost>100</cost>
@@ -12998,7 +12998,7 @@
         <value name="Tier3"/>
     </type>
     <type name="Mag_AK74_45Rnd">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>5400</lifetime>
         <restock>1800</restock>
         <min>1</min>
@@ -13023,7 +13023,7 @@
         <value name="Tier3"/>
     </type>
     <type name="Mag_AKM_Drum75Rnd">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -13073,10 +13073,10 @@
         <value name="Tier4"/>
     </type>
     <type name="Mag_CMAG_20Rnd">
-        <nominal>12</nominal>
+        <nominal>6</nominal>
         <lifetime>28800</lifetime>
         <restock>1800</restock>
-        <min>9</min>
+        <min>5</min>
         <quantmin>5</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
@@ -13085,10 +13085,10 @@
         <usage name="Special"/>
     </type>
     <type name="Mag_CMAG_30Rnd">
-        <nominal>10</nominal>
+        <nominal>5</nominal>
         <lifetime>28800</lifetime>
         <restock>0</restock>
-        <min>8</min>
+        <min>4</min>
         <quantmin>5</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
@@ -13097,10 +13097,10 @@
         <usage name="Special"/>
     </type>
     <type name="Mag_CMAG_40Rnd">
-        <nominal>5</nominal>
+        <nominal>3</nominal>
         <lifetime>5400</lifetime>
         <restock>3600</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>5</quantmin>
         <quantmax>50</quantmax>
         <cost>100</cost>
@@ -13251,10 +13251,10 @@
         <value name="Tier4"/>
     </type>
     <type name="Mag_M14_20Rnd">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>20</quantmin>
         <quantmax>90</quantmax>
         <cost>100</cost>
@@ -13319,10 +13319,10 @@
         <value name="Tier2"/>
     </type>
     <type name="Mag_PM73_15Rnd">
-        <nominal>8</nominal>
+        <nominal>4</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>6</min>
+        <min>3</min>
         <quantmin>30</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -13331,10 +13331,10 @@
         <usage name="Police"/>
     </type>
     <type name="Mag_PM73_25Rnd">
-        <nominal>6</nominal>
+        <nominal>3</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>4</min>
+        <min>2</min>
         <quantmin>30</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -13399,10 +13399,10 @@
         <usage name="Special"/>
     </type>
     <type name="Mag_SCARH_20Rnd_Black">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>20</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -13438,10 +13438,10 @@
         <usage name="Military"/>
     </type>
     <type name="Mag_STANAG_60Rnd">
-        <nominal>6</nominal>
+        <nominal>3</nominal>
         <lifetime>28800</lifetime>
         <restock>7200</restock>
-        <min>3</min>
+        <min>2</min>
         <quantmin>5</quantmin>
         <quantmax>40</quantmax>
         <cost>100</cost>
@@ -13450,10 +13450,10 @@
         <usage name="Special"/>
     </type>
     <type name="Mag_SV98_10Rnd">
-        <nominal>12</nominal>
+        <nominal>6</nominal>
         <lifetime>14400</lifetime>
         <restock>3600</restock>
-        <min>9</min>
+        <min>5</min>
         <quantmin>40</quantmin>
         <quantmax>60</quantmax>
         <cost>100</cost>
@@ -13462,10 +13462,10 @@
         <usage name="Underground"/>
     </type>
     <type name="Mag_SVD_10Rnd">
-        <nominal>6</nominal>
+        <nominal>3</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>4</min>
+        <min>2</min>
         <quantmin>10</quantmin>
         <quantmax>100</quantmax>
         <cost>1000</cost>
@@ -13980,10 +13980,10 @@
         <value name="Tier2"/>
     </type>
     <type name="Mich2001Helmet">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>28800</lifetime>
         <restock>3600</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -14893,7 +14893,7 @@
         <value name="Tier3"/>
     </type>
     <type name="NVGoggles">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>28800</lifetime>
         <restock>7200</restock>
         <min>1</min>
@@ -15373,10 +15373,10 @@
         <value name="Tier2"/>
     </type>
     <type name="PM73Rak">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>-1</quantmin>
         <quantmax>-1</quantmax>
         <cost>100</cost>
@@ -16335,7 +16335,7 @@
         <category name="clothes"/>
     </type>
     <type name="PlateCarrierVest_Black">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -16372,7 +16372,7 @@
         <usage name="Military"/>
     </type>
     <type name="PlateCarrierVest_Green">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -16383,7 +16383,7 @@
         <usage name="Underground"/>
     </type>
     <type name="PlateCarrierVest_Winter">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -16867,10 +16867,10 @@
         <value name="Tier3"/>
     </type>
     <type name="R12">
-        <nominal>4</nominal>
+        <nominal>2</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>20</quantmin>
         <quantmax>80</quantmax>
         <cost>100</cost>
@@ -17349,7 +17349,7 @@
         <usage name="Special"/>
     </type>
     <type name="SCARH_Black">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -17396,7 +17396,7 @@
         <usage name="Special"/>
     </type>
     <type name="SCAR_StockBttstck_Black">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -17449,10 +17449,10 @@
         <value name="Tier3"/>
     </type>
     <type name="SV98">
-        <nominal>3</nominal>
+        <nominal>2</nominal>
         <lifetime>7200</lifetime>
         <restock>3600</restock>
-        <min>2</min>
+        <min>1</min>
         <quantmin>40</quantmin>
         <quantmax>60</quantmax>
         <cost>100</cost>
@@ -17473,7 +17473,7 @@
         <usage name="Underground"/>
     </type>
     <type name="SVD_Wooden">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>7200</lifetime>
         <restock>10800</restock>
         <min>1</min>
@@ -20162,7 +20162,7 @@
         <usage name="Hunting"/>
     </type>
     <type name="T56TankerHelmet_Olive">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>
@@ -20174,7 +20174,7 @@
         <usage name="Special"/>
     </type>
     <type name="T56TankerHelmet_Tan">
-        <nominal>2</nominal>
+        <nominal>1</nominal>
         <lifetime>14400</lifetime>
         <restock>0</restock>
         <min>1</min>

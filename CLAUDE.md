@@ -23,16 +23,18 @@ set:
   dynamic spawn range (`dmin`/`dmax`); a range set to `0`/`0` means that spawn mode is unused for
   that zone. Tune infected/animal density via these attributes.
 - **Gameplay & entry points:** `cfggameplay.json`, `config.cpp`, `init.c`, plus effect/area and
-  underground trigger config. Hardcore ruleset: permadeath (`disableRespawnInUnconsciousness`), a
-  constant year-round cold climate (`environmentMinTemps`/`environmentMaxTemps` flat at −8/0 °C), and
-  no ambient personal light (`PlayerData.disablePersonalLight`) so nights stay genuinely dark.
+  underground trigger config. These now track **vanilla Sakhal**: respawn in unconsciousness is
+  allowed (`disableRespawnInUnconsciousness` is `false`), ambient personal light is on
+  (`PlayerData.disablePersonalLight` is `false`), and `environmentMinTemps`/`environmentMaxTemps`
+  follow the stock seasonal curve rather than a flat year-round cold. The hardcore ruleset that 2.0.0
+  introduced was dropped when the live server's mission folder became the baseline — see CHANGELOG.md.
 - **Spawn loadout:** none — `cfggameplay.json` omits `PlayerData.spawnGearPresetFiles` entirely
   (matching vanilla Sakhal), so new characters get DayZ's built-in default spawn gear. To define a
   custom loadout, add the key back pointing at a preset file; paths are relative to the mission
   root (`./custom/...`).
-- **Base building:** `cfggameplay.json` `BaseBuildingData` runs **free-form placement** — all
-  `HologramData`/`ConstructionData` `disable*Check` flags are `true` (build anywhere, including cold
-  zones). `disallowedTypesInUnderground` still blocks specific kits underground.
+- **Base building:** `cfggameplay.json` `BaseBuildingData` runs **vanilla placement rules** — all
+  `HologramData`/`ConstructionData` `disable*Check` flags are `false`, so stock collision, roof, and
+  base-viability checks apply. `disallowedTypesInUnderground` still blocks specific kits underground.
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
@@ -45,15 +47,19 @@ FTP deploy (only mission config is uploaded) and are kept for reproducibility an
 
 ### Loot economy conventions
 
-When rebalancing `db/types.xml` spawn counts (`nominal`/`min`) globally, two classes of item are
-intentionally **exempt** and keep their upstream values:
+The current baseline applies a global ~50% reduction of `db/types.xml` `nominal`/`min` to **every
+one of the 1,985 types, with no exemptions**, using a ceiling round (`ceil(n/2)`, so `9` → `5` and
+`1` stays `1`).
 
-- Items flagged `deloot="1"` in `<flags>` — dynamic event loot, tuned by event spawns rather than
-  the ambient economy.
-- Items with a `<usage name="Underground"/>` flag — Sakhal underground-facility loot.
+Earlier passes (through 2.0.0) exempted two classes of item — `deloot="1"` dynamic event loot and
+`<usage name="Underground"/>` facility loot — so they kept upstream values. That convention no
+longer holds: both classes were reduced along with everything else. Re-apply it deliberately if a
+future rebalance should spare them.
 
-The current baseline reflects a global ~50% reduction of `nominal`/`min` (round half up, never below
-zero) applied to every non-exempt type.
+`cfgrandompresets.xml` is tuned alongside it: the preset-level `chance` on each `<cargo>`/
+`<attachments>` container governs how often the container rolls at all, while the per-item `chance`
+values inside govern what lands in it. The current baseline halves the container-level chance across
+all 78 presets and leaves per-item chances untouched.
 
 ## Deployment
 

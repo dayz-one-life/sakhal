@@ -13,6 +13,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 ### Security
 
+## [3.0.0] - 2026-07-30
+
+### Changed
+- Loot economy: halved `nominal` and `min` for **all 1,985** types in `db/types.xml` using a ceiling round (`ceil(n/2)`, so `9` → `5` and `1` stays `1`). Unlike the 2.0.0 pass, **no types are exempt** — the 45 `deloot="1"` (dynamic event loot) and 18 `<usage name="Underground"/>` items were reduced along with everything else, so the exemption convention documented in CLAUDE.md no longer describes the baseline.
+- Loot economy: halved the preset-level `chance` on **all 78** containers in `cfgrandompresets.xml` (43 `<cargo>`, 35 `<attachments>`) — e.g. `foodHermit` `0.15` → `0.075`, `hatsFirefighter` `1.00` → `0.50`, `headtorches` `0.03` → `0.015`. Per-item `chance` values inside each preset are unchanged, and the three intentionally-disabled `glasses*` presets stay at `0.00`. Combined with the `db/types.xml` pass, ambient loot is roughly a quarter of the 2.1.1 baseline in both spawn count and container fill rate.
+- Mission config: adopted the live server's copy of the mission folder as the new baseline. This reverts several customizations back to vanilla Sakhal values (see Removed).
+
+### Removed
+- Hardcore ruleset: the server copy drops the customizations that 2.0.0 established. `cfggameplay.json` sets `disableRespawnInUnconsciousness` back to `false` (permadeath off), `disablePersonalLight` back to `false` (ambient personal light returns, so nights are no longer fully dark), restores vanilla seasonal `environmentMinTemps`/`environmentMaxTemps` in place of the flat −8/0 °C year-round climate, and returns every `HologramData`/`ConstructionData` `disable*Check` flag to `false` (free-form base placement is gone; vanilla collision, roof, and base-viability checks apply again).
+- Infected density: `env/zombie_territories.xml` reverts the 2.0.0 zed buff, lowering `dmin`/`dmax` by 1 across all 404 dynamic zones.
+- Broadcast messages: `db/messages.xml` collapses the five-message onboarding rotation from 2.1.1 (PR #46) to a single message, `One Life is better with the app. https://dayzonelife.com`, with no `onconnect` delay.
+
+### Fixed
+- Loot economy: `LootDamageMin` in `db/globals.xml` is `0.25` (was `0.2`), so spawned loot carries at least 25% wear.
+
 ## [2.1.1] - 2026-07-20
 
 ### Changed
