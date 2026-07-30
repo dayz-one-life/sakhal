@@ -47,19 +47,18 @@ FTP deploy (only mission config is uploaded) and are kept for reproducibility an
 
 ### Loot economy conventions
 
-The current baseline applies a global ~50% reduction of `db/types.xml` `nominal`/`min` to **every
-one of the 1,985 types, with no exemptions**, using a ceiling round (`ceil(n/2)`, so `9` → `5` and
-`1` stays `1`).
+The current baseline is **plain vanilla Sakhal**: `db/types.xml` `nominal`/`min` and the
+container-level `chance` values in `cfgrandompresets.xml` match the upstream
+`road-to-badlands-mission-files` base with no reductions. The global ~50% loot nerf that 3.0.0
+applied (and the exemption conventions from earlier passes) was reverted; see CHANGELOG.md if a
+future rebalance wants to re-apply it — the deterministic scripts live in
+`docs/tools/road-to-badlands/`.
 
-Earlier passes (through 2.0.0) exempted two classes of item — `deloot="1"` dynamic event loot and
-`<usage name="Underground"/>` facility loot — so they kept upstream values. That convention no
-longer holds: both classes were reduced along with everything else. Re-apply it deliberately if a
-future rebalance should spare them.
-
-`cfgrandompresets.xml` is tuned alongside it: the preset-level `chance` on each `<cargo>`/
-`<attachments>` container governs how often the container rolls at all, while the per-item `chance`
-values inside govern what lands in it. The current baseline halves the container-level chance across
-all 78 presets and leaves per-item chances untouched.
+The only mission files that intentionally diverge from vanilla are `db/globals.xml` and
+`db/messages.xml`, which track the shared copies in the parent directory of this repo (one level
+above the clone, alongside the `chernarus`/`livonia` sibling repos). `db/globals.xml` keeps the
+custom `LootDamageMin` of `0.25` plus shared timer values; `db/messages.xml` carries the One Life
+broadcast message.
 
 ## Deployment
 
