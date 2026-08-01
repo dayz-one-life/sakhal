@@ -32,9 +32,10 @@ set:
   (matching vanilla Sakhal), so new characters get DayZ's built-in default spawn gear. To define a
   custom loadout, add the key back pointing at a preset file; paths are relative to the mission
   root (`./custom/...`).
-- **Base building:** `cfggameplay.json` `BaseBuildingData` runs **vanilla placement rules** — all
-  `HologramData`/`ConstructionData` `disable*Check` flags are `false`, so stock collision, roof, and
-  base-viability checks apply. `disallowedTypesInUnderground` still blocks specific kits underground.
+- **Base building:** `cfggameplay.json` `BaseBuildingData` runs **"build anywhere"** — every
+  `HologramData`/`ConstructionData` `disable*Check` flag is `true`, so stock collision, roof,
+  base-viability, underwater, terrain, angle, height, and cold-area checks are all bypassed and
+  placement is free-form. `disallowedTypesInUnderground` still blocks specific kits underground.
 
 Edits are vetted against the official DayZ config schemas; changes flow through the workflow below.
 
