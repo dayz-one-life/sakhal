@@ -8,11 +8,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 ### Changed
-- Base building: enabled "build anywhere" by setting every `disable*Check` boolean in `cfggameplay.json` `BaseBuildingData` to `true` — all eleven `HologramData` checks (bounding-box, player, roof-clipping, base-viability, geometry-plot, angle, placement-permitted, height, underwater, in-terrain, cold-area) and all three `ConstructionData` checks (roof, colliding, distance). Placement is now free-form: parts can be snapped into terrain, underwater, at any angle, and outside normally-buildable areas. `disallowedTypesInUnderground` is unchanged, so `FenceKit`, `TerritoryFlagKit`, and `WatchtowerKit` remain blocked underground.
 ### Deprecated
 ### Removed
 ### Fixed
 ### Security
+
+## [3.2.0] - 2026-08-01
+
+### Changed
+- Base building: enabled "build anywhere" by setting every `disable*Check` boolean in `cfggameplay.json` `BaseBuildingData` to `true` — all eleven `HologramData` checks (bounding-box, player, roof-clipping, base-viability, geometry-plot, angle, placement-permitted, height, underwater, in-terrain, cold-area) and all three `ConstructionData` checks (roof, colliding, distance). Placement is now free-form: parts can be snapped into terrain, underwater, at any angle, and outside normally-buildable areas. `disallowedTypesInUnderground` is unchanged, so `FenceKit`, `TerritoryFlagKit`, and `WatchtowerKit` remain blocked underground.
 
 ## [3.1.0] - 2026-07-30
 
